@@ -1,0 +1,88 @@
+/* footer.css */
+/* footer_inner */
+.footer_inner li {float: left;}
+.footer_inner li a {color:#fff;}
+
+.footer_inner > div:first-of-type {
+    width: 100%;padding-bottom: 20px;margin-bottom: 20px;
+    border-bottom: 1px solid #6c6f73;
+}
+.footer_inner > div:first-of-type:after {content: "";display: block;clear: both;}
+.footerLink {float: left;}
+.footerSNS {float: right;}
+
+
+/* div : first - ul.footerLink */
+.footerLink > li {
+    position: relative;
+    padding-right: 20px;margin-right: 20px;
+}
+.footerLink > li:after {
+    content: "";
+    position: absolute;right: 0;top:50%;
+    width:1px;height: 14px;margin-top: -5px;
+    background: #999;
+}
+.footerLink > li:last-child:after {display: none;}
+
+
+/* div : first - ul : last */
+.footerSNS > li {margin-left: 15px;}
+
+.footerSNS > li > a {
+    display: block;
+    width: 21px;height: 19px;
+    background: url(../images/sns_link_ico.png) no-repeat 0 0;
+    text-indent: -9999px;overflow: hidden;
+}
+.footerSNS > li:first-child > a {background-position-x: -30px;}
+.footerSNS > li:nth-child(2) > a {background-position-x: 0;}
+.footerSNS > li:nth-child(3) > a {background-position-x: -60px;}
+.footerSNS > li:last-child > a {background-position-x: -90px;}
+
+
+/* div:last */
+.footer_inner > div:last-of-type > ul {
+    float: left;
+    margin-bottom: 20px;
+}
+.footer_inner > div:last-of-type > ul > li {margin-right:30px;}
+.footer_inner > div:last-of-type > ul > li > a {color:#ccc;}
+.footer_inner > div:last-of-type > ul > li:nth-of-type(3) > a {color:#0cf;}
+
+
+.footer_inner > div:last-of-type > p{
+    float: right;
+    color:#ccc;
+}
+.footer_inner > div:last-of-type > address {
+    clear: both;
+    width: 420px;
+    color:#ccc;
+}
+.footer_inner > div:last-of-type > address > span {
+    position: relative;
+    padding-right: 10px;margin-right: 10px;
+}
+
+.footer_inner > div:last-of-type > address > span:after {
+    content: "";
+    position: absolute;right: 0;top:50%;
+    width: 1px;height: 10px;margin-top: -5px;
+    background: #ccc;
+}
+.footer_inner > div:last-of-type > address > span:nth-child(3):after {display: none;}
+.footer_inner > div:last-of-type > address > span:nth-child(4):after {display: none;}
+
+/* top button */
+.btn_top {
+    position:fixed;bottom:30px;right:80px;z-index:100;opacity:0;
+    width:60px;height:60px;
+    border:1px solid #333;
+    background:#fff url(../images/top_btn_ico.png) no-repeat 50% 20%;
+    font-size:13px;color:#333;text-align:center;line-height:80px;
+    cursor:pointer;
+}
+
+.btn_top.ab {position:absolute;bottom:215px;}
+.btn_top.on {opacity:1;}

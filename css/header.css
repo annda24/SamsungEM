@@ -1,0 +1,204 @@
+/* header.css */
+/* header */
+/* 로고 */
+h1.logo {position:absolute;left:30px;top:17px;}
+h1.logo a {
+    display:block;
+    width:176px;height:36px;
+    background:url(../images/logo.png) no-repeat 0 0;
+    text-indent:-9999px;overflow:hidden;
+}
+/* //header_wrap */
+/* //header_inner */
+/* 주메뉴 */
+nav.gnb {box-sizing:border-box;}
+nav.gnb > ul {width:100%;height:70px;text-align:center;}
+nav.gnb > ul > li {
+    display:inline-block;
+    padding:0 45px;
+    line-height:70px;height:70px;
+}
+nav.gnb > ul > li > a {
+    position:relative;
+    display:inline-block;
+    font-size:16px;color:#000;font-weight:600;
+}
+nav.gnb > ul > li > a:after {
+    content:"";
+    position:absolute;left:50%;bottom:0;
+    transform:translateX(-50%);
+    background:#043285;
+    transition:width .4s ease-in-out 0s;
+    width:0;height:0;opacity:0;
+}
+nav.gnb > ul > li:hover > a:after {width:100%;height:3px;opacity:1;}
+nav.gnb > ul > li > div {
+    display:none;
+    position:absolute;left:0;
+    width:100%;
+    background-color:#f3f3f3;
+    line-height:40px;
+}
+nav.gnb > ul > li.on > div {display:block;}
+
+/* nav.gnb > ul > li:hover > div {display:block;} */
+
+nav.gnb > ul > li > div > ul {margin:38px 0;}
+    
+nav.gnb > ul > li > div > ul > li {
+    display:inline-block;
+    padding:0 50px;
+    text-align:left;border-right:1px solid #ddd;vertical-align:top;
+}
+nav.gnb > ul > li > div > ul > li:last-child {border-right:none;}
+
+nav.gnb > ul > li > div > ul > li > a {
+    display:block;
+    font-size:15px;color:#1428a0;font-weight:bold;
+}
+nav.gnb > ul > li > div > ul > li > ul {float:left;}
+nav.gnb > ul > li > div > ul > li > ul:nth-of-type(2) {margin-left:50px;}
+
+nav.gnb > ul > li:nth-child(1) > div > ul > li {height:260px;}/* line 수 * 40px - 20px */
+nav.gnb > ul > li:nth-child(2) > div > ul > li {height:180px;}
+nav.gnb > ul > li:nth-child(3) > div > ul > li {height:100px;}
+nav.gnb > ul > li:nth-child(4) > div > ul > li {height:220px;}
+nav.gnb > ul > li:nth-child(5) > div > ul > li {height:140px;}
+
+.gnb_button {margin:0 auto 40px;}
+.gnb_button > a {
+    display:inline-block;
+    height:100%;padding:17px 20px 15px;
+    border:1px solid #e2e2e2;border-radius:5px;
+    background:#fff url(../images/icon_btn_arrow_b.png) no-repeat 95% 50%;
+    text-align:left;line-height:1.5;
+}
+.gnb_button > a > strong {
+    display:block;
+    margin-bottom:9px;
+    font-size:16px;font-weight:600;
+}
+.gnb_button > a > p {font-size:14px;}
+
+nav.gnb > ul > li:nth-child(1) > div > div.gnb_button > a {
+    width:838px;
+    background-position:97% 50%; 
+}
+nav.gnb > ul > li:nth-child(1) > div > div.gnb_button > a > strong {color:#1428a0;}
+
+nav.gnb > ul > li:nth-child(4) > div > div.gnb_button > a {
+    width:300px;
+    margin-right:20px;
+}
+
+/* 확인용 */
+/* nav.gnb > ul > li:nth-child(1) > div {display:block;} */
+
+
+/* 탑메뉴 */
+dl.topMenu{position:absolute;right:60px;top:0;}
+dl.topMenu > dd {float:left;}
+dl.topMenu > dd > a {
+    position:relative;display:block;
+    width:60px;height:40px;padding-top:30px;
+    text-align:center;font-weight:600;
+}
+dl.topMenu > dd > a:after {
+    content:"";
+    position:absolute;left:0;top:50%;
+    width:1px;height:10px;
+    background-color:#ddd;
+}
+dl.topMenu > dd:first-of-type > a {
+    background:url(../images/ico_inq.png) no-repeat 50% 30px;
+    text-indent:-9999px;overflow:hidden;
+}
+dl.topMenu > dd:first-of-type > a:after {display:none;}
+dl.topMenu > dd > ul {
+    display:none;
+    position:absolute;top:68px;
+    width:60px;padding-top:10px;
+    background:#fff;
+    border:1px solid #ededed;
+    border-top:5px solid #1428a0;
+}
+
+dl.topMenu > dd:nth-of-type(2) > ul > li > a {
+    display:block;
+    width:30px;height:30px;margin:0 auto 10px;
+    border-radius:50%;
+    text-indent:-9999px;overflow:hidden;
+}
+dl.topMenu > dd:nth-of-type(2) > ul > li:first-child > a {background:#ededed url(../images/utill_sns_ico.png) no-repeat -30px 0;}
+dl.topMenu > dd:nth-of-type(2) > ul > li:nth-child(2) > a {background:#ededed url(../images/utill_sns_ico.png) no-repeat -60px 0;}
+dl.topMenu > dd:nth-of-type(2) > ul > li:nth-child(3) > a {background:#ededed url(../images/utill_sns_ico.png) no-repeat -0 0;}
+dl.topMenu > dd:nth-of-type(2) > ul > li:last-child > a {background:#ededed url(../images/utill_sns_ico.png) no-repeat -120px 0;}
+
+dl.topMenu > dd:last-of-type > ul {height:130px;}
+dl.topMenu > dd:last-of-type > ul > li {text-align:center;padding:10px 0;}
+
+/* 확인용 */
+/* dl.topMenu > dd:nth-child(3)> ul {display:block;} */
+
+
+/* btn_srch */
+div.btn_srch {position:absolute;right:0;top:0;} 
+div.btn_srch a{
+    display:block;
+    width:60px;height:70px;
+    text-indent:-9999px;overflow:hidden;
+    background:#043285 url(../images/btn_srch_ico.png) no-repeat 50% 50%;
+}
+
+
+/* srch_wrap */
+div.srch_wrap {
+    display:none;
+    position:fixed;left:0;top:0;z-index:50;
+    width:100%;height:100%;
+    background:rgba(0,0,0,0.6);
+}
+div.srch_wrap.on {display:block;}
+
+/* srch_inner */
+div.srch_inner {
+    position:absolute;left:0;top:70px;
+    width:100vw;height:200px;padding-top:60px;
+    background:url(../images/srch_pop_bg.jpg) no-repeat 50% 50%;
+    background-size:cover;
+}
+div.srch_inner > form {width:655px;margin:0 auto;}
+div.srch_inner > form > fieldset {
+    width:100%;height:55px;margin-bottom:20px;
+    background:#fff;
+}
+div.srch_inner input[type="search"] {
+    width:600px;height:55px;
+    text-indent:20px;border:none;
+}
+div.srch_inner button[type="button"] {
+    position:relative;left:2px;top:2px;
+    width:45px;height:45px;
+    background:#333 url(../images/btn_srch_ico_l.png) no-repeat 50% 50%;
+    text-indent:-9999px; overflow:hidden;
+}
+div.srch_inner > form > ul {
+    width:100%;padding-top:20px;
+    border-top:1px solid rgba(255, 255, 255, .5);
+}
+div.srch_inner > form > ul > li {
+    float:left;
+    height:45px;padding:0 29px;margin-right:10px;
+    border-radius:5px;background:#eee url(../images/btn_arrow_ico_m.png) no-repeat 90% 50%;
+    font-size:16px;line-height:45px;
+}
+div.srch_inner > form > ul > li:last-child {float:right;margin-right:0;}
+
+
+/* btn_srch_close */
+a.btn_srch_close {
+    position:absolute;right:0;top:0;
+    width:60px;height:70px;
+    background:#043285 url(../images/srch_pop_close.png) no-repeat 50% 50%;
+    text-indent:-9999px;overflow:hidden;
+}

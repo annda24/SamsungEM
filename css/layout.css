@@ -1,0 +1,30 @@
+/* layout.css */
+/* 웹폰트 지정 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* common */
+body {font-size:14px;font-family:'Noto Sans','Noto Sans KR',Helvetica,sans-serif;color:#333;}
+a {text-decoration:none;color:#333;}
+a:hover{text-decoration:none; color:#333;}
+h2 {text-align:center;font-size:38px;font-weight:bold;}
+
+/* layout */
+#wrap {width:100%;}
+    #header {position:relative;z-index:40;width:100%;height:70px;}
+        .header_wrap {position:absolute;left:0;top:0;width:100%;height:70px;background-color:#f3f3f3;}
+            .header_inner {position:relative;width:100%;border-bottom:1px solid #ccc;background-color:#fff;}
+    .main_visual {position:relative;z-index:30;width:100%;min-height:940px;height:fit-content;}
+    #container {width:100%;}
+        /* main */
+        .content1 {width:1142px;padding:80px 0 120px;margin:0 auto;}
+        .content2 {width:1105px;padding:56px 96px 60px;margin:80px auto 127px;background-color:#fff;}
+        .content2:after{content:"";display:block;clear:both; }
+        .content3 {width:1142px;margin:0px auto 120px;}
+        /* sub */
+        .spot {width: 100%;height: 321px;}
+            .spot_inner {width: 1140px;margin: 0 auto;}
+        #content {width: 1140px;margin: 0 auto;}
+    .sitemap {width:100%;padding:62px 0 143px;background-color:#f3f3f3;}
+    #footer {position:relative;width:100%;height:185px;background-color:#474a4f;}
+        .footer_inner {width:1142px;padding-top:27px;margin:0 auto;}
+
