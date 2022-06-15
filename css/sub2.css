@@ -1,7 +1,7 @@
 /* detail */
 /* container */
 /* spot */
-.spot {background: url(../images/careers_visual_img.jpg) no-repeat 50% 0;color:#fff;}
+.spot {background: url(../images/careers_visual_img.jpg) no-repeat 50% 0;color:#fff;background-size:cover;}
 .spot_inner {padding-top:80px;}
 .spot_inner > h2 {margin-bottom: 15px;font-size: 50px;font-weight: 600;}
 .spot_inner > p {font-size: 16px;color: #eee;}
@@ -15,8 +15,8 @@
 #content {margin-top:120px;}
 p.info_txt {text-align: right;margin-bottom: 10px;}
 
-table.job {width: 100%;margin-bottom: 60px;}
-table.job thead th {
+.job {width: 100%;margin-bottom: 60px;}
+.job thead th {
     height:60px;
     background-color: #f3f3f3;
     font-size: 18px;text-align: center;
@@ -34,27 +34,16 @@ table.job thead th {
 .job tbody td:last-of-type {border-right:none;}
 .job tbody tr:last-of-type td {border-bottom: 1px solid #000;}
 
-div.faq {
+.faq {
     box-sizing: border-box;
     width: 100%;padding:20px 30px;margin-bottom: 160px;
     border: 1px solid #ccc;
 }
-div.faq:after {content: "";display: block;clear: both;}
+.faq:after {content: "";display: block;clear: both;}
 .faq p {float: left;;font-size: 16px;line-height:45px;}
 .faq a {
     float: right;
     width: 160px;height: 45px;
     background: #043285 url(../images/btn_arrow_ico_w.png) no-repeat 90% 50%;
     color:#fff;font-size:16px;text-align: center;line-height:45px;
-}
-
-
-/* top button */
-.btn_top {
-    position: fixed;bottom: 30px;right: 80px;z-index: 100;
-    width: 60px;height: 60px;
-    border: 1px solid #333;
-    background: #fff url(../images/top_btn_ico.png) no-repeat 50% 20%;
-    font-size: 13px;color:#333;text-align: center;line-height: 80px;
-    cursor: pointer;
 }

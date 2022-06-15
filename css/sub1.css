@@ -1,7 +1,7 @@
 /* detail */
 /* container */
 /* spot */
-.spot {background: url(../images/faq_visual_img.jpg) no-repeat 50% 0;color:#fff;}
+.spot {background: url(../images/faq_visual_img.jpg) no-repeat 50% 0;color:#fff;background-size:cover;}
 .spot_inner {padding-top:80px;}
 .spot_inner > h2 {margin-bottom: 10px;font-size: 50px;font-weight: 600;}
 .spot_inner > p {font-size: 16px;color: #eee;}
@@ -148,19 +148,4 @@ dd.custom_file label {
     width: 160px;height: 45px;margin: 0 auto;
     background: #043285 url(../images/btn_arrow_ico_w.png) no-repeat 75% 50%;
     color: #fff;text-align: center
-}
-
-
-
-
-
-
-/* top button */
-.btn_top {
-    position: fixed;bottom: 30px;right: 80px;z-index: 100;
-    width: 60px;height: 60px;
-    border: 1px solid #333;
-    background: #fff url(../images/top_btn_ico.png) no-repeat 50% 20%;
-    font-size: 13px;color:#333;text-align: center;line-height: 80px;
-    cursor: pointer;
 }
